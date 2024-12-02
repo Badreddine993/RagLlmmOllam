@@ -43,14 +43,14 @@ How It Works
 4. **Ask Questions**:  
    Enter your question in the provided text box, and the app will retrieve relevant content from your document.
 
-Screenshot
+Ollama
 ----------
 
 .. image:: _static/app_screenshot.png
    :alt: Document Query App Screenshot
    :width: 800px
 
-Figure: A screenshot showcasing the Document Query App in action.
+Figure: Ollama 
 
 
 Use Cases
