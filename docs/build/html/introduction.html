@@ -44,7 +44,14 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Introduction</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Introduction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#key-features">Key Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-it-works">How It Works</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#screenshot">Screenshot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#use-cases">Use Cases</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#getting-started">Getting Started</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuration</a></li>
@@ -76,12 +83,55 @@
              
   <section id="introduction">
 <h1>Introduction<a class="headerlink" href="#introduction" title="Link to this heading"></a></h1>
-<p>Welcome to RagOllamm! This project is designed to…</p>
-<p>Features:
-- Feature 1
-- Feature
-- Feature 3
-- Feature 4</p>
+<p>📄 <strong>Document Query App</strong></p>
+<p>The <strong>Document Query App</strong> is a user-friendly tool designed to explore the contents of text documents through interactive queries. Powered by <strong>Streamlit</strong>, <strong>Chroma</strong>, and <strong>Ollama LLM</strong>, this app leverages advanced language models to retrieve and display relevant information based on your input.</p>
+<p>With this app, users can:
+- <strong>Upload text documents</strong> and transform their content into retrievable chunks.
+- <strong>Interact with the document</strong> by asking questions in natural language.
+- <strong>Discover insights instantly</strong>, using cutting-edge vector embeddings and language models.</p>
+<section id="key-features">
+<h2>Key Features<a class="headerlink" href="#key-features" title="Link to this heading"></a></h2>
+<ol class="arabic simple">
+<li><p><strong>Interactive Document Querying</strong>
+Upload any plain text document and query its content for specific information.</p></li>
+<li><p><strong>Model Flexibility</strong>
+Choose between different language models, such as <cite>llama3</cite> and <cite>mistral</cite>, for tailored results.</p></li>
+<li><p><strong>Advanced Text Splitting</strong>
+Utilizes the <cite>RecursiveCharacterTextSplitter</cite> to handle large files and split them into manageable chunks for efficient processing.</p></li>
+<li><p><strong>Chroma Vector Store Integration</strong>
+Harness the power of the Chroma library to create a searchable vector representation of your document.</p></li>
+<li><p><strong>Streamlined Interface</strong>
+Powered by <strong>Streamlit</strong>, the app provides an intuitive and accessible interface for all users.</p></li>
+</ol>
+</section>
+<section id="how-it-works">
+<h2>How It Works<a class="headerlink" href="#how-it-works" title="Link to this heading"></a></h2>
+<ol class="arabic simple">
+<li><p><strong>Upload Your Document</strong>:
+Upload a plain text file using the drag-and-drop interface or file uploader.</p></li>
+<li><p><strong>Select a Model</strong>:
+Choose your preferred language model from the sidebar to customize your experience.</p></li>
+<li><p><strong>Process Your Document</strong>:
+The document is split into chunks and stored as vectors using the selected model.</p></li>
+<li><p><strong>Ask Questions</strong>:
+Enter your question in the provided text box, and the app will retrieve relevant content from your document.</p></li>
+</ol>
+</section>
+<section id="screenshot">
+<h2>Screenshot<a class="headerlink" href="#screenshot" title="Link to this heading"></a></h2>
+</section>
+<section id="use-cases">
+<h2>Use Cases<a class="headerlink" href="#use-cases" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><strong>Researchers</strong>: Quickly find specific information in large datasets or research papers.</p></li>
+<li><p><strong>Students</strong>: Search through textbooks or notes to retrieve key concepts and explanations.</p></li>
+<li><p><strong>Businesses</strong>: Extract relevant insights from reports, contracts, or other corporate documents.</p></li>
+</ul>
+</section>
+<section id="getting-started">
+<h2>Getting Started<a class="headerlink" href="#getting-started" title="Link to this heading"></a></h2>
+<p>Follow the <a class="reference internal" href="installation.html"><span class="doc">Installation</span></a> and <a class="reference internal" href="usage.html"><span class="doc">Usage</span></a> sections to set up and start using the Document Query App.</p>
+</section>
 </section>
 
 
