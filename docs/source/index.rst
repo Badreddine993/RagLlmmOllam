@@ -18,3 +18,11 @@ documentation for details.
    introduction
    installation
    usage
+   configuration
+   examples
+   api_reference
+   troubleshooting
+   faq
+   contributing
+   changelog
+   license
