@@ -1,26 +1,85 @@
 Installation
 ============
 
-To set up and run the RagOllamm Document Query App, follow these steps:
+To set up and run the RagOllamm Document Query App, follow the steps below. This guide ensures proper configuration and smooth operation of the app.
 
-Prerequisites Ensure you have the following installed on your system before proceeding: - Python 3.8 or above - Pip (Python's package manager) - Git - [Ollama LLM Backend](https://www.ollama.ai/) (for serving the language model)
+Prerequisites
+-------------  
+Before installing, ensure the following tools are installed on your system:  
+- **Python 3.8 or above**: Required for running the app and its dependencies.  
+- **Pip**: Python's package manager for installing dependencies.  
+- **Git**: For cloning the project repository.  
+- **[Ollama LLM Backend](https://www.ollama.ai/)**: For serving the language model locally.  
 
-Steps to Install 1. **Clone the Repository** First, clone the repository from GitHub to your local machine: ``` git clone <repository> cd <repository> ```
+Steps to Install
+----------------  
 
-2. **Set Up a Virtual Environment** Create and activate a virtual environment to isolate dependencies: - On **Windows**: ``` python -m venv Ragenv Ragenv\Scripts\activate ``` - On **macOS/Linux**: ``` python3 -m venv Ragenv source Ragenv/bin/activate ```
+1. **Clone the Repository**  
+Begin by cloning the project repository to your local machine using Git:  
+```bash  
+git clone <repository>  
+cd <repository>  
+Set Up a Virtual Environment
+Create and activate a virtual environment to isolate dependencies for the app.
+On Windows:
+python -m venv Ragenv  
+Ragenv\Scripts\activate  
+On macOS/Linux:
+python3 -m venv Ragenv  
+source Ragenv/bin/activate  
+Install Required Dependencies
+Install all necessary Python libraries listed in requirements.txt:
+pip install -r requirements.txt  
+The required dependencies include:
 
-3. **Install Required Dependencies** Install the necessary Python packages: ``` pip install -r requirements.txt ``` This will install all the dependencies, including: - Streamlit - LangChain - Chroma - Ollama LLM libraries
+Streamlit: For building the app's interactive interface.
+LangChain: For working with language models and vector stores.
+Chroma: For vector storage and retrieval.
+Ollama LLM Libraries: For integrating and running the language models.
+Start the Ollama LLM Backend
+Ensure the Ollama LLM backend is running. Follow these steps:
+Download and install the Ollama software.
+Start the server locally:
+ollama serve --port 11434  
+By default, the backend will be accessible at http://127.0.0.1:11434.
 
-4. **Start the Ollama LLM Backend** Ensure the Ollama LLM backend is running on your local machine. Follow these steps: - Download and install the [Ollama](https://www.ollama.ai/) LLM software. - Start the Ollama server locally by running: ``` ollama serve --port 11434 ``` By default, the backend should be accessible at `http://127.0.0.1:11434`.
+Run the Streamlit App
+Launch the app using the Streamlit command:
+streamlit run streamlit_app.py  
+Access the App
+Open your web browser and navigate to:
+http://localhost:8501  
+The app will be live, and you can start uploading documents.
 
-5. **Run the Streamlit App** Launch the app using Streamlit: ``` streamlit run streamlit_app.py ```
+Upload Your Document
+Use the file uploader to upload a plain text document (.txt format).
+Once uploaded, you can query the document by entering questions in the provided input box.
+Troubleshooting
 
-6. **Access the App** Open the app in your web browser. It will usually be available at: ``` http://localhost:8501 ```
+If you encounter issues during installation or while running the app, refer to the solutions below:
 
-7. **Upload Your Document** In the app, upload a plain text file (`.txt` format) using the file uploader. Start querying your document by entering questions in the provided input box.
+Ollama Backend Not Running:
+Ensure the Ollama backend is active. Use the following command to restart it:
+ollama serve --port 11434  
+Missing Dependencies:
+Reinstall the required packages with:
+pip install -r requirements.txt  
+App Not Starting:
+Verify you are in the correct directory and have activated the virtual environment:
+source Ragenv/bin/activate  # macOS/Linux  
+Ragenv\Scripts\activate     # Windows  
+Dependencies
 
-Troubleshooting If you encounter any issues during installation or while running the app, here are some common solutions: - **Ollama Backend Not Running**: Ensure the server is active and accessible at `http://127.0.0.1:11434`. Use the following command to start it: ``` ollama serve --port 11434 ``` - **Dependencies Missing**: If any packages are missing, ensure you installed them with: ``` pip install -r requirements.txt ``` - **App Not Starting**: Verify you are in the correct directory and have activated the virtual environment: ``` source Ragenv/bin/activate # macOS/Linux Ragenv\Scripts\activate # Windows ```
+The requirements.txt file contains the following dependencies:
 
-Dependencies The `requirements.txt` file should include the following: ``` streamlit langchain_community langchain_ollama ``` These dependencies will ensure the app runs smoothly with all required functionalities.
+streamlit  
+langchain_community  
+langchain_ollama  
+These dependencies ensure the app operates with all required functionalities.
 
-Notes For additional help, refer to the official documentation of [Streamlit](https://docs.streamlit.io) and [Ollama](https://www.ollama.ai/).
+Notes
+
+For further assistance, consult the official documentation of the tools used:
+
+Streamlit Documentation
+Ollama Documentation
