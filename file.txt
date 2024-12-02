@@ -1,0 +1,9 @@
+Boukfa Badreddine is an industrial engineering student specializing in data science and digital transformation. He is passionate about leveraging artificial intelligence, machine learning, and big data to solve real-world problems.
+
+Badreddine has a diverse set of skills, including proficiency in Python, Django, and tools like Docker, Apache Kafka, and Power BI. He also has a strong interest in Unity for developing virtual environments, as evidenced by his VR projects for training nurses and digitizing industrial robots.
+
+He is pursuing a PhD CIFRE at Centrale-Supélec in France, focusing on artificial intelligence. Additionally, he has worked on optimizing logistics using self-organizing maps (SOM) and is developing a system to connect robot arms using GraphQL and OPC UA.
+
+In his free time, Badreddine enjoys learning new skills like Scala for big data applications, improving his French language proficiency, and exploring Lean Management principles. He also aspires to visit the USA to explore places like NASA and Tesla.
+
+Badreddine believes in the power of technology to revolutionize industries and is eager to make a meaningful impact through innovation and collaboration.
