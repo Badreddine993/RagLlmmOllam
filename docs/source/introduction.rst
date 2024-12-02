@@ -46,8 +46,9 @@ How It Works
 Screenshot
 ----------
 
-.. image::  _static/app_screenshot.png
-   :alt: Document Query App Screenshot
+.. image:: _static/app_screenshot.png
+    :alt: Document Query App Screenshot
+    :width: 800px
 
    *Figure: A screenshot showcasing the Document Query App in action.*
 
